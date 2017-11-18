@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Творчество фотографов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Open+Sans:300,400,700|Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+  </head>
+  <body>
+    <header class="page-header" data-parallax="scroll" data-image-src="img/main-bg.jpg" data-z-index="1">
+      <div class="page-header__wrapper">
+        <nav class="main-nav  main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#about-us" onclick="slowScroll('#about-us')" class="main-nav__link">
+                <span data-hover="О&nbsp;нас">О нас</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#portfolio" onclick="slowScroll('#portfolio')">
+                <span data-hover="Портфолио">Портфолио</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts" onclick="slowScroll('#contacts')">
+                <span data-hover="Контакты">Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__logo">
+          <img class="page-header__logo-img" src="img/logo.png" alt="logo">
+        </div>
+        <h1 class="page-header__title"> <span class="page-header__title-bold">Творчество</span> фотографов</h1>
+        <h2 class="page-header__second-title">Делаем качественные и естественные снимки</h2>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="about-us" id="about-us">
+        <nav class="main-nav main-nav--tablet ">
+          <ul class="main-nav__list main-nav__list--about-us main-nav__list--line">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--about-us main-nav__link--active">
+                О нас
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--about-us" href="#portfolio" onclick="slowScroll('#portfolio')">
+                <span data-hover="Портфолио">Портфолио</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--about-us" href="#contacts" onclick="slowScroll('#contacts')">
+                <span data-hover="Контакты">Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="about-us__description">
+          <h2 class="about-us__title">О нас</h2>
+          <p class="about-us__text">Привет! Хочешь качественные и естественные снимки? Тогда тебе к нам.)</p>
+          <p class="about-us__text">
+          Мы семейная пара фотографов: Евгения Ванюта и Максим Камышанский.
+          От нас ты не увидишь никаких виньеток, пленочного зерна, странных поз и прочего. Вы получите классическую фотографию, которую не будет стыдно показать даже через века. Фотография будет чистенькая и приятная глазу, она будет эстетична во всех планах.
+          Полученные фотографии вы сможете распечатать не только в альбом форматом 10x15, но и на баннер, качество картинки от этого не изменится, мы снимаем на профессиональную камеру с огромным разрешением.)
+          </p>
+          <p class="about-us__text"> Также съемки всегда базируются на комфорте, чтобы ты и мы получили от фотосессии максимум драйва и кайфа.)
+            О цене договоримся, у нас есть как платные так и бесплатные съемки, все зависит от твоей внешности и темы, пиши, не стесняйся)
+            Всем крутых фотокарточек! )
+          </p>
+          <cite class="about-us__author">Евгения Ванюта и Максим Камышанский</cite>
+        </div>
+        <div class="about-us__img-wrapper">
+            <img class="about-us__img" src="img/main-img.jpg" alt="logo">
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio-wrapper">
+          <nav class="main-nav main-nav--tablet ">
+            <ul class="main-nav__list ">
+              <li class="main-nav__item">
+                <a class="main-nav__link " href="#" href="#about-us" onclick="slowScroll('#about-us')">
+                  <span data-hover="О&nbsp;нас">О нас</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Портфолио</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link " href="#contacts" onclick="slowScroll('#contacts')">
+                  <span data-hover="Контакты">Контакты</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <h2 class="portfolio__title">Портфолио</h2>
+          <div class="portfolio__cards">
+            <div class="portfolio__item">
+              <a href="img/portfolio-img-1.jpg" class="portfolio__popup">
+                <img class="portfolio__img" src="img/portfolio-img-1.jpg" alt="">
+              </a>
+            </div>
+            <div class="portfolio__item">
+              <a href="img/portfolio-img-4.jpg" class="portfolio__popup">
+                <img class="portfolio__img" src="img/portfolio-img-4.jpg" alt="">
+              </a>
+            </div>
+            <div class="portfolio__item">
+              <a href="img/portfolio-img-3.jpg" class="portfolio__popup">
+                <img class="portfolio__img" src="img/portfolio-img-3.jpg" alt="">
+              </a>
+            </div>
+            <div class="portfolio__item">
+              <a href="img/portfolio-img-5.jpg" class="portfolio__popup">
+                <img class="portfolio__img" src="img/portfolio-img-5.jpg" alt="">
+              </a>
+            </div>
+            <div class="portfolio__item">
+              <a href="img/portfolio-img-2.jpg" class="portfolio__popup">
+                <img class="portfolio__img" src="img/portfolio-img-2.jpg" alt="">
+              </a>
+            </div>
+            <div class="portfolio__item">
+              <a href="img/portfolio-img-6.jpg" class="portfolio__popup">
+                <img class="portfolio__img" src="img/portfolio-img-6.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <nav class="main-nav main-nav--tablet">
+            <ul class="main-nav__list main-nav__list--about-us main-nav__list--line">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us" href="#about-us" onclick="slowScroll('#about-us')">
+                  <span data-hover="О&nbsp;нас">О нас</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us" href="#portfolio" onclick="slowScroll('#portfolio')">
+                  <span data-hover="Портфолио">Портфолио</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--about-us main-nav__link--active">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="contacts" id="contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__email">Почта:</p>
+          <p class="contacts__email-adress"><a href="mailto:sarizava@yandex.ru" class="contacts__email-link">evanuta@yandex.ru</a></p>
+          <p class="contacts__phone">Телефон:</p>
+          <p class="contacts__phone-number">+7953 371 91 10</p>
+          <p class="contacts__social">Социальные<br> сети:</p>
+          <ul class="social">
+            <li class="social__item social__item--vk">
+              <a href="https://vk.com/ppurpurrr" class="social__link social__link--vk"><span class="visually-hidden"> Вконтакте</span></a>
+            </li>
+            <li class="social__item social__item--ins">
+              <a href="https://www.instagram.com/ppurpurr" class="social__link social__link--ins"><span class="visually-hidden">Инстаграмм</span>
+              </a>
+            </li>
+            <li class="social__item social__item--skype">
+              <a href="skype:evanuta?call" class="social__link social__link--skype"><span class="visually-hidden"> Скайп</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-text"> 2017 © Творчество фотографов Purpur</p>
+        </div>
+      </div>
+
+    </footer>
+      <script src="libs/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
+      <script src="js/script.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        function slowScroll(id) {
+          var offset = 0;
+          $("html, body").animate ({
+            scrollTop: $(id).offset ().top - offset
+          }, 1000);
+          return false;
+        }
+      </script>
+      <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+  </body>
+</html>
