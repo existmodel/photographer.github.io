@@ -149,6 +149,10 @@ body {
   overflow: hidden;
   padding-right: 5px;
   display: inline-block; }
+.main-nav__link:active {
+  opacity: 0.5;
+  font-weight: 700;
+}
 
 .main-nav__link span {
   position: relative;
@@ -354,8 +358,8 @@ body {
 .portfolio__img {
   display: block; }
 
-.portfolio__popup {
-  outline: none; }
+/*.portfolio__popup {
+  outline: none; }*/
 
 .portfolio__cards {
   display: -webkit-box;
@@ -458,7 +462,8 @@ body {
           justify-content: center; }
 
 .social__link {
-  cursor: pointer; }
+  cursor: pointer;
+  transition-duration: 1s; }
   .social__link:hover {
     opacity: 0.3; }
 
