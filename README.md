@@ -4,6 +4,6 @@
 ### Сборка на Gulp
 ### Использование Sass, методология БЭМ
 ### Mobile First
-### Чистый Java Script для мобильного меню
+### Java Script для мобильного меню
 ### Parallax, Scroll и Magnific Popup с помощью библиотеки jQuery
 ### Критическая функциональность сайта работоспособна без JavaScript 
