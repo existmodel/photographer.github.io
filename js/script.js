@@ -22,10 +22,33 @@
         $(".portfolio__popup").magnificPopup({type:"image"});
       });
 
-function slowScroll(id) {
-      var offset = 0;
-      $("html, body").animate ({
-        scrollTop: $(id).offset ().top - offset
-      }, 1000);
-      return false;
-}
+
+      $(function(){
+  //scroll to top
+      $('.button-up').click(function(){
+        $('html, body').animate({ scrollTop: 0 }, 500);
+        return false;
+      });
+    });
+
+// function slowScroll(id) {
+//       var offset = 0;
+//       $("html, body").animate ({
+//         scrollTop: $(id).offset ().top - offset
+//       }, 1000);
+//       return false;
+// }
+
+
+
+// $(document).ready(function(){
+//       // Фикмированная шапка при скролле
+//       $("#header").removeClass("default");
+//       $(window).scroll(function(){
+//         if ($(this).scrollTop() > 20) {
+//           $("#header").addClass("default").fadeIn('fast');
+//         } else {
+//           $("#header").removeClass("default").fadeIn('fast');
+//         };
+//       });
+//     });

@@ -12,7 +12,9 @@
   <body>
     <header class="page-header" data-parallax="scroll" data-image-src="img/main-bg.jpg" data-z-index="1">
       <div class="page-header__wrapper">
-        <nav class="main-nav  main-nav--opened main-nav--nojs">
+
+
+<!--         <nav class="main-nav  main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -31,7 +33,29 @@
               </a>
             </li>
           </ul>
+        </nav> -->
+        <nav class="main-nav  main-nav--opened main-nav--nojs main-nav--scroll">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#about-us">
+                <span data-hover="О&nbsp;нас">О нас</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#portfolio" >
+                <span data-hover="Портфолио">Портфолио</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts">
+                <span data-hover="Контакты">Контакты</span>
+              </a>
+            </li>
+          </ul>
         </nav>
+
+
         <div class="page-header__logo">
           <img class="page-header__logo-img" src="img/logo.png" alt="Логотип-фотоаппарат">
         </div>
@@ -41,61 +65,25 @@
     </header>
     <main class="page-main">
       <section class="about-us" id="about-us">
-        <nav class="main-nav main-nav--tablet ">
-          <ul class="main-nav__list main-nav__list--about-us main-nav__list--line">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us main-nav__link--active">
-                О нас
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us" href="#portfolio" onclick="slowScroll('#portfolio')">
-                <span data-hover="Портфолио">Портфолио</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--about-us" href="#contacts" onclick="slowScroll('#contacts')">
-                <span data-hover="Контакты">Контакты</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
         <div class="about-us__description">
           <h2 class="about-us__title">О нас</h2>
           <p class="about-us__text">Мы семейная пара, которая очень любит фотографировать. Мы посвятили этому ремеслу много времени еще до того как решили стать Творчеством фотографов Evergrump. Фотография для нас это особый ритуал, который мы хотим разделить с вами. Мы стремимся запечатлеть самые яркие эмоции.
-            <p class="about-us__text">
-              В основном мы занимаемся стоковой фотографией, а также снимаем в студии и на планере. В нашей работе мы ориентируемся прежде всего четком плане действий для максимального результата.
-              Наша команда находится в постоянном поиске моделей, любого возраста и внешности.  Обязательно пишите нам и мы обсудим съемку во всех деталях.
-              <p class="about-us__text">
-                Наша цель создать комфортные условия для съемки в зависимости от желаний модели и получить головокружительный результат на фотокарточках.
-              </p>
-              <cite class="about-us__author">Евгения Ванюта и Максим Камышанский</cite>
-            </div>
-            <div class="about-us__img-wrapper">
-              <img class="about-us__img" src="img/main-img.jpg" alt="Фотографы">
-            </div>
-          </section>
-          <section class="portfolio" id="portfolio">
-            <div class="portfolio-wrapper">
-              <nav class="main-nav main-nav--tablet ">
-                <ul class="main-nav__list ">
-                  <li class="main-nav__item">
-                    <a class="main-nav__link " href="#about-us" onclick="slowScroll('#about-us')">
-                      <span data-hover="О&nbsp;нас">О нас</span>
-                    </a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link main-nav__link--active">Портфолио</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link " href="#contacts" onclick="slowScroll('#contacts')">
-                      <span data-hover="Контакты">Контакты</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <h2 class="portfolio__title">Портфолио</h2>
-              <div class="portfolio__cards">
+          <p class="about-us__text">
+          В основном мы занимаемся стоковой фотографией, а также снимаем в студии и на планере. В нашей работе мы ориентируемся прежде всего четком плане действий для максимального результата.
+          Наша команда находится в постоянном поиске моделей, любого возраста и внешности.  Обязательно пишите нам и мы обсудим съемку во всех деталях.
+          <p class="about-us__text">
+          Наша цель создать комфортные условия для съемки в зависимости от желаний модели и получить головокружительный результат на фотокарточках.
+          </p>
+          <cite class="about-us__author">Евгения Ванюта и Максим Камышанский</cite>
+        </div>
+        <div class="about-us__img-wrapper">
+          <img class="about-us__img" src="img/main-img.jpg" alt="Фотографы">
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio-wrapper">
+          <h2 class="portfolio__title">Портфолио</h2>
+          <div class="portfolio__cards">
                 <div class="portfolio__item">
                   <a href="img/portfolio-img-1.jpg" class="portfolio__popup">
                     <img class="portfolio__img" src="img/portfolio-img-1.jpg" alt="Фотография">
@@ -141,29 +129,12 @@
                     <img class="portfolio__img" src="img/portfolio-img-9.jpg" alt="Фотография">
                   </a>
                 </div>
-              </div>
-            </div>
-          </section>
-        </main>
-        <footer class="page-footer">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
           <div class="page-footer__wrapper">
-            <nav class="main-nav main-nav--tablet">
-              <ul class="main-nav__list main-nav__list--about-us main-nav__list--line">
-                <li class="main-nav__item">
-                  <a class="main-nav__link main-nav__link--about-us" href="#about-us" onclick="slowScroll('#about-us')">
-                    <span data-hover="О&nbsp;нас">О нас</span>
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link main-nav__link--about-us" href="#portfolio" onclick="slowScroll('#portfolio')">
-                    <span data-hover="Портфолио">Портфолио</span>
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link main-nav__link--about-us main-nav__link--active">Контакты</a>
-                </li>
-              </ul>
-            </nav>
             <div class="contacts" id="contacts">
               <h2 class="contacts__title">Контакты</h2>
               <p class="contacts__email">Почта:</p>
@@ -191,17 +162,81 @@
                     </a>
                   </li>
                 </ul>
-              </div>
-              <div class="page-footer__copyright">
-                <p class="page-footer__copyright-text"> 2017 © Творчество фотографов Purpur</p>
-              </div>
             </div>
-          </footer>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-          <script src="js/parallax.min.js"></script>
-          <script src="libs/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
-          <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-          <script src="js/script.js" type="text/javascript"></script>
-          <script src="js/index.js" type="text/javascript"></script>
-        </body>
-      </html>
+            <div class="page-footer__copyright">
+              <p class="page-footer__copyright-text"> 2017 © Творчество фотографов Purpur</p>
+            </div>
+          </div>
+    </footer>
+
+    <div class="button-up" id="button-up">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="#000000" d="M24 16L12 28l2.83 2.83L24 21.66l9.17 9.17L36 28z"/></svg>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="libs/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <!-- <script src="js/index.js" type="text/javascript"></script> -->
+    <script type="text/javascript">
+
+
+    // $(document).ready(function(){
+    //   // Фикмированная шапка при скролле
+    //   $(".main-nav").removeClass("main-nav--scroll");
+    //   $(window).scroll(function(){
+    //     if ($(this).scrollTop() > 652) {
+    //       $(".main-nav").addClass("main-nav--scroll").fadeIn('fast');
+    //     } else {
+    //       $(".main-nav").removeClass("main-nav--scroll").fadeIn('fast');
+    //     };
+    //   });
+
+    // });
+
+    var menu_selector = ".main-nav"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
+    function onScroll(){
+      var scroll_top = $(document).scrollTop();
+      $(menu_selector + " a").each(function(){
+        var hash = $(this).attr("href");
+        var target = $(hash);
+        if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+          $(menu_selector + "main-nav__link--active ").removeClass("main-nav__link--active ");
+          $(this).addClass("main-nav__link--active ");
+        } else {
+          $(this).removeClass("main-nav__link--active ");
+        }
+      });
+
+      $(".main-nav").removeClass("main-nav--scroll");
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 690) {
+          $(".main-nav").addClass("main-nav--scroll").fadeIn('fast');
+        } else {
+          $(".main-nav").removeClass("main-nav--scroll").fadeIn('fast');
+        };
+      });
+    }
+
+    $(document).ready(function () {
+      $(document).on("scroll", onScroll);
+      $("a[href^='#']").click(function(e){
+        e.preventDefault();
+        $(document).off("scroll");
+        $(menu_selector + "main-nav__link--active").removeClass("main-nav__link--active");
+        $(this).addClass("main-nav__link--active");
+        var hash = $(this).attr("href");
+        var target = $(hash);
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 690, function(){
+          window.location.hash = hash;
+          $(document).on("scroll", onScroll);
+        });
+      });
+    });
+
+
+  </script>
+  </body>
+</html>
