@@ -214,6 +214,7 @@ body {
 
 .main-nav__link--active {
   font-weight: 700;
+  pointer-events: none;
 }
 
 .main-nav__item {
